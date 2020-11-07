@@ -1,0 +1,77 @@
+﻿@model IEnumerable<MvcWebApplication.Models.Car>
+
+@{
+    ViewBag.Title = "SearchIndex";
+}
+
+<h2>SearchIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    @using (Html.BeginForm())
+    {
+    <p>
+        Make:@Html.TextBox("SearchString") 
+        <input type="submit" value="Filter" />
+    </p>
+     }
+ </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Make)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OwnerLastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageFile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RecordCreationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CarTypeID)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Make)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Color)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OwnerLastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImageFile)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RecordCreationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CarTypeID)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
