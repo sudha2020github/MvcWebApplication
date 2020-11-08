@@ -17,6 +17,7 @@ namespace MvcWebApplication.Controllers
     {
         private SchoolContext db = new SchoolContext();
 
+       
         public ActionResult SearchIndex(string searchString)
         {
             var cars = from c in db.Car
@@ -42,6 +43,7 @@ namespace MvcWebApplication.Controllers
             ViewBag.SelectedCategory = carCategory;
             return View(carCategory);
         }
+        [Authorize]
         public ActionResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
