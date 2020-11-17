@@ -4,17 +4,20 @@ This is a simple ASP.NET MVC application built using Visual Studio 2019 and MSSQ
 
 
 Getting started:
+
 Before going any further, make sure you have the following:
 IDE (such as Visual Studio 2017 or later)
 
 
 1. Download the application:
+
 •	The source code of the sample application lives in a Github repository.
 •	Clone the app repository with your favorite GIT client. If you are used to working with Git, you can clone the repository to your computer by typing the following to your console:
 o	git clone https://github.com/sudha2020github/MvcWebApplication
 
 
 2. Run the application:
+
 •	Open the solution in your IDE using MvcWebApplication.sln file.
 •	Please create the database as per the connection string in the webconfig. Use the database scripts to create the database schemas.
 •	Build the solution.
