@@ -12,7 +12,7 @@ Before going any further, make sure you have the following:
 
    • 	The source code of the sample application lives in this Github repository.
 
-   •	Clone the app repository with your favorite GIT client. If you are used to working with Git, you can clone the repository to your computer by typing the following to your console:
+   •	Clone the app repository with your favorite GIT client. If you are used to working with Git, you can clone the repository to your computer by typing the following to your Git Shell console:
 
    o	git clone https://github.com/sudha2020github/MvcWebApplication
 
