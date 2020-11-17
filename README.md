@@ -10,7 +10,7 @@ Before going any further, make sure you have the following:
 
 1. Download the application:
 
-   • 	The source code of the sample application lives in a Github repository.
+   • 	The source code of the sample application lives in this Github repository.
 
    •	Clone the app repository with your favorite GIT client. If you are used to working with Git, you can clone the repository to your computer by typing the following to your console:
 
